@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alien Shadows</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+        ❤️ Vida: <span id="vida">100</span>
+        &nbsp;&nbsp;
+        🎯 Puntos: <span id="puntos">0</span>
+        &nbsp;&nbsp;
+        🔫 Arma: <span id="arma">Pistola Láser</span>
+    </div>
+
+    <div id="menu">
+        <h1>👽 ALIEN SHADOWS</h1>
+
+        <p>W A S D → Moverse</p>
+        <p>Mouse → Apuntar y disparar</p>
+        <p>1, 2, 3 → Cambiar arma</p>
+        <p>ESC → Pausar</p>
+
+        <button onclick="iniciarJuego()">▶ JUGAR</button>
+    </div>
+
+    <div id="pausa">
+        <div class="panel">
+            <h1>⏸ PAUSA</h1>
+
+            <button onclick="continuarJuego()">▶ CONTINUAR</button>
+            <button onclick="iniciarJuego()">🔄 REINICIAR</button>
+            <button onclick="volverAlMenu()">🏠 MENÚ</button>
+        </div>
+    </div>
+
+    <div id="gameOver">
+        <h1>GAME OVER</h1>
+
+        <p>Puntuación: <span id="puntuacionFinal">0</span></p>
+
+        <button onclick="iniciarJuego()">🔄 VOLVER A JUGAR</button>
+        <button onclick="volverAlMenu()">🏠 MENÚ</button>
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
