@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #050509;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+    background: #080b12;
+}
+
+/* HUD */
+
+#hud {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+    z-index: 5;
+}
+
+/* MENÚ */
+
+#menu {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #050509;
+    color: white;
+
+    z-index: 10;
+}
+
+#menu h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#menu p {
+    margin: 5px;
+    color: #b8c0cc;
+}
+
+/* BOTONES */
+
+button {
+    width: 250px;
+    margin: 12px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #293cff;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4656ff;
+}
+
+/* PAUSA */
+
+#pausa {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    color: white;
+    z-index: 20;
+}
+
+.panel {
+    text-align: center;
+
+    padding: 40px;
+
+    background: #10131c;
+
+    border: 2px solid #39445c;
+    border-radius: 15px;
+}
+
+/* GAME OVER */
+
+#gameOver {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #050509;
+
+    color: white;
+    z-index: 30;
+}
+
+#gameOver h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
